@@ -56,9 +56,11 @@ textarea {
     color: #333;
     font-size: 10px;
     padding-left: 15px;
+
   }
 
   .learn-more {
+    border-top: 1px solid #eaeaea;
     background-color: #F7F7F7;
     box-sizing: border-box;
     color: #333;
@@ -68,6 +70,7 @@ textarea {
     padding-bottom: auto;
     padding-top: auto;
     border-radius: 5px;
+    border-bottom: 1px solid #eaeaea;
 
     .row {
       color: #333;
