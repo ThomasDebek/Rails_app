@@ -1,0 +1,121 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@import "bootstrap";
+
+
+
+/* unversal */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+section {
+  overflow: auto;
+}
+textarea {
+  resize: vertical;
+}
+
+.center {
+  height: 500px;
+  background-image: url('SingapurRozmiar666x1000.jpg');
+  h1, p {
+    color: white;
+  }
+}
+
+
+/* header */
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  padding-top: 7px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: red;
+    text-decoration: none;
+  }
+}
+
+
+/* foter */
+
+
+
+/* moje */
+
+.footer {
+  p#footer {
+    padding-top: 10px;
+    color: #333;
+    font-size: 10px;
+    padding-left: 15px;
+
+  }
+
+  .learn-more {
+    border-top: 1px solid #eaeaea;
+    background-color: #F7F7F7;
+    box-sizing: border-box;
+    color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    line-height: 12px;
+    padding-bottom: auto;
+    padding-top: auto;
+    border-radius: 5px;
+    border-bottom: 1px solid #eaeaea;
+
+    .row {
+      color: #333;
+      margin: auto;
+
+      .col-md-4 {
+        display: inline-block;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        width: 280px;
+        h3 {
+          font-size: 15px;
+          color: deepskyblue;
+        }
+
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
