@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'store/index'
+
   resources :places
 
   root 'static_pages#home'
