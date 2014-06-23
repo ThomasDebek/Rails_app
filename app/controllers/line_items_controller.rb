@@ -27,7 +27,7 @@ class LineItemsController < ApplicationController
   # POST /line_items.json
   def create
     place = Place.find(params[:place_id])
-    @line_item = @cart.line_items.build(place: place)
+    @line_item = @cart.add_place(place.id)
 
     respond_to do |format|
       if @line_item.save
