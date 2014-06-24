@@ -2,6 +2,17 @@
     <p id="notice"><%= notice %></p>
 <% end %>
 
+<% if @cart.line_items.empty? %>
+   <p></p>
+ <% else %>
+    <div id="cart">
+      <%= render 'carts/cart' %>
+    </div>
+<% end %>
+
+
+
+
 <h1>List your Hotels </h1>
 
 <table>
@@ -25,6 +36,8 @@
       </tr>
   <% end %>
 </table>
+
+
 
 <br>
 
