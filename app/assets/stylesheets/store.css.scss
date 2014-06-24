@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .store {
+  h1 {
+    padding-top: 50px;
+
+  }
   table {
     border-collapse: collapse;
   }
@@ -56,10 +60,14 @@
     }
   }
   #cart {
-      .btn, h2{
+      .btn, h2 {
         margin-left: 170px;
         margin-top: 10px;
       }
+      .pull-right {
+        margin-right: 170px;
+      }
+
       table {
         width: 600px;
         border-collapse: collapse;
