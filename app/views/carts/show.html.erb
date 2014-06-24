@@ -3,15 +3,27 @@
 <% end %>
 
 
-
 <h2>Your Cart</h2>
-<ul>
+<table>
+  <tr>
+    <th>Quantity</th>
+    <th>Place</th>
+    <th>Price</th>
+  </tr>
   <% @cart.line_items.each do |item| %>
-      <li><%= item.quantity %> &times; <%= item.place.title %> </li>
+        <tr>
+          <td><%= item.quantity %>  </td>
+          <td><%= item.place.title %></td>
+          <td class="total_cell"><%= number_to_currency(item.total_price) %></td>
+        </tr>
   <% end %>
-</ul>
+  <tr>
+    <td colspan="2">Total</td>
+    <td><%= number_to_currency(@cart.total_price) %></td>
+  </tr>
+</table>
 
-<%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-small  btn-primary" %>
+<%= button_to 'Empty cart', @cart, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-small  btn-primary" %>
 
 
 

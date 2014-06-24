@@ -1,3 +1,51 @@
 // Place all the styles related to the Carts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.carts {
+  .btn, h2{
+    margin-left: 170px;
+    margin-top: 10px;
+  }
+  table {
+    width: 600px;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  th, td {
+    border: none;
+  }
+  th{
+    background-color: #000;
+    color: #e0f8f8;
+  }
+  /* Co drugi wiersz inny kolor */
+  tr:nth-of-type(even){        /*parzyste*/
+    background-color: #F3F3F3;
+  }
+  tr:nth-of-type(odd){         /*nieparzyste*/
+    background-color: #ddd;
+  }
+  /* Wyrownanie tekstu w kolumnie przy użyciu selektora :nth-child */
+  td:nth-child(n+2){
+    text-align: right;
+  }
+  /* Pogrubienie tekstu w ostatnim wierszu */
+  tr:last-child{
+    font-weight: bolder;
+  }
+  /* Powiekszenie ostatniej komórki w ostatnim wierszu */
+  tr:last-child td:last-child {
+    font-size: 22px;
+  }
+  /* Przesunmy wartosci */
+  tr:nth-last-child(n+2) td {
+    text-align: center;
+  }
+  /* Dodajmy kolor */
+  td {
+    padding-right: 2px;
+  }
+
+
+}
