@@ -21,7 +21,7 @@
     label {
       width: 5em;
       float: left;
-      text-align: right;
+
       padding-top: 0.2em;
       margin-right: 0.1em;
       display: block;
@@ -32,6 +32,9 @@
   }
   .submit {
     margin-left: 4em;
+  }
+  .actions {
+    margin-left: 60px;
   }
   br {
     display: none
