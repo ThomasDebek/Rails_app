@@ -16,6 +16,10 @@ class OrdersController < ApplicationController
 
   # GET /orders/new
   def new
+    if @cart.line_items.empty?
+      redirect_to index_path, notice: "Your cart is empty"
+      return
+    end
     @order = Order.new
   end
 
