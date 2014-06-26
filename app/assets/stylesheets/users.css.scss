@@ -3,42 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.Rails_app_form {
-  width: 400px;
+.Center_user {
   text-align: center;
-  margin-left:  225px;
-  fieldset {
-    background: #e0f8f8;
-
-    legend {
-      color: deepskyblue;
-      background: #244;
-      font-family: sans-serif;
-      padding: 0.2em 1em;
-
-    }
-  }
-  form {
-    label {
-      width: 5em;
-      float: left;
-
-      padding-top: 0.2em;
-      margin-right: 0.1em;
-      display: block;
-    }
-  }
-  select, textarea, input {
-    margin-left: 0.5em;
-  }
-  .submit {
-    margin-left: 4em;
-  }
-  .actions {
-    margin-left: 60px;
-  }
-  br {
-    display: none
-  }
-
 }
