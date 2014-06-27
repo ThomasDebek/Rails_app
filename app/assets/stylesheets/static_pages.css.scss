@@ -5,6 +5,12 @@
 .static_pages {
 
   #about {
+    text-align: center;
+    h1 {
+      color: deepskyblue;
+    }
+
+
   }
 
   #browse {
@@ -30,12 +36,14 @@
 
   }
   #contact {
-    h1, p {
-      color: red;
-      text-align: center;
+    text-align: center;
+    h1 {
+      color: deepskyblue;
+
     }
   }
   #help {
+    text-align: center;
   }
 
   #home {

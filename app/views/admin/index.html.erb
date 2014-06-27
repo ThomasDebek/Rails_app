@@ -1,8 +1,16 @@
+<div class="Center_admin">
+  <h1>Welcome</h1>
 
-<h1>Welcome</h1>
-<p>
-  It's <%= Time.now.strftime("%y.%m.%d %H:%M:%S") %>
-</p>
-<p>
-  You have <%= pluralize(@total_orders, "order") %>.
-</p>
+  <p>
+    It's <%= Time.now.strftime("%y.%m.%d %H:%M:%S") %>
+  </p>
+
+  <p>
+    You have <%= pluralize(@total_orders, "order") %>.
+  </p>
+  <p>
+    <%= link_to 'Go to orders', orders_path %>
+  </p>
+</div>
+
+
