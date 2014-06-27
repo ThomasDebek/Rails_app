@@ -1,5 +1,4 @@
 class OrdersController < ApplicationController
-  before_action :authorize
   include CurrentCart
   before_action :set_cart, only: [:new, :create]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
