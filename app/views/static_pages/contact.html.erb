@@ -1,6 +1,14 @@
 <% provide(:title, 'Contact') %>
 
 <div id="contact">
-  <h1>Contact</h1>
-  <p>Find me in Warsaw</p>
+  <%= form_tag do %>
+      <fieldset>
+        <legend><h1>Contact</h1></legend>
+        <div>
+          <p><strong>Find me in Warsaw</strong></p>
+        </div>
+
+      </fieldset>
+  <% end %>
+
 </div>

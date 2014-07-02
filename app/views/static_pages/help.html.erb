@@ -1,6 +1,13 @@
 <% provide(:title, 'Help') %>
 
 <div id="help">
-  <h1>Help</h1>
-  <p><%= link_to "Web development that doesn't hurt", 'http://www.rubyonrails.org ' %></p>
+  <%= form_tag do %>
+      <fieldset>
+        <legend><h1>Help</h1></legend>
+        <div>
+          <p><strong><%= link_to "Web development that doesn't hurt", 'http://www.rubyonrails.org ' %></strong></p>
+        </div>
+
+      </fieldset>
+  <% end %>
 </div>

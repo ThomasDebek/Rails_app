@@ -1,10 +1,22 @@
 <% provide(:title, 'About') %>
 
 <div id="about">
-  <h1>About Me</h1>
-  <p>Programista pasjonat na początku kariery fascynujący sie kodem .
-    Szukający rozwoju i zdobywania nowego doświadczenia zarówno w front-endzie jak i back-endzie.
-    Charakteryzujący sie sumiennością, rzetelnością jak również pełnym zaangażowaniem w projekt.
-    Jako absolwent Wyższej Szkoły Informatycznej w Warszawie silnie zmotywowany do dalszej nauki i w dążeniu do celu.
-    Sympatyczny i szybko nawiązujący dobre relacje ze współpracownikami.</p>
+  <%= form_tag do %>
+      <fieldset>
+        <legend><h1>About Me</h1></legend>
+        <div>
+          <p><strong>Programista pasjonat na początku kariery fascynujący sie kodem .
+            Szukający rozwoju i zdobywania nowego doświadczenia zarówno w front-endzie jak i back-endzie.
+            Charakteryzujący sie sumiennością, rzetelnością jak również pełnym zaangażowaniem w projekt.
+            Jako absolwent Wyższej Szkoły Informatycznej w Warszawie silnie zmotywowany do dalszej nauki i w dążeniu do celu.
+            Sympatyczny i szybko nawiązujący dobre relacje ze współpracownikami.</strong></p>
+        </div>
+
+      </fieldset>
+  <% end %>
+
+
+
+
+
 </div>
