@@ -1,9 +1,17 @@
-<div class="Center_places">
-  <h1>New place</h1>
+<div class="Center_places_new">
 
-  <%= render 'form' %>
+  <%= form_tag do %>
+      <fieldset>
+        <legend><h1>New place</h1></legend>
+        <div>
+          <p><%= render 'form' %></p>
+        </div>
+        <div>
+          <%= link_to 'Back', places_path %>
+        </div>
 
-  <%= link_to 'Back', places_path %>
+      </fieldset>
+  <% end %>
 
 </div>
 
