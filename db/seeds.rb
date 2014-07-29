@@ -117,6 +117,9 @@ Place.create!(title: 'The Peninsula - Tokyo',
               image_url: 'Peninsula_Tokyo.jpg',
               price: 193.00)
 
+User.delete_all
+User.create(name: 'tomek', password: 'secret', password_confirmation: 'secret')
+
 
 
 
