@@ -6,12 +6,11 @@ class Order < ActiveRecord::Base
 
   validates :name, :address, :email, presence: true
   validates :pay_type, inclusion: PAYMENT_TYPES
-  validates :email, uniqueness: true
+  # validates :email, uniqueness: true
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence:   true,
-            format:     { with: VALID_EMAIL_REGEX },
-            uniqueness: { case_sensitive: false }
+            format:     { with: VALID_EMAIL_REGEX }
 
 
   def add_line_items_from_cart(cart)
